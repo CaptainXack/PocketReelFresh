@@ -49,9 +49,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-private enum class RootTab { Local, Online, Search, Settings }
-private enum class MediaTab { Movies, Series }
-
 @Composable
 private fun PocketReelApp() {
     var rootTab by rememberSaveable { mutableStateOf(RootTab.Local) }
